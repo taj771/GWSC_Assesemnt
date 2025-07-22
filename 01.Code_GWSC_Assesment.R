@@ -411,12 +411,12 @@ change_raster <- lc_2000
 # calculate all changes
 values(change_raster) <- case_when(
   # Grassland and Crop Land conversions
-  lc_2000[] == 10 & lc_2018[] == 120 ~ 1,  # cropland_to_urban
-  lc_2000[] == 10 & lc_2018[] == 130 ~ 1,  # cropland_to_bare
-  lc_2000[] == 120 & lc_2018[] == 10 ~ 1,  # urban_to_cropland
-  lc_2000[] == 130 & lc_2018[] == 10 ~ 1,  # bare_to_cropland
-  lc_2000[] != lc_2018[] ~ 2,              # other changes
-  TRUE ~ 0                                 # no change
+  lc_2000[] == 10 & lc_2018[] == 120 ~ 1,  
+  lc_2000[] == 10 & lc_2018[] == 130 ~ 1,  
+  lc_2000[] == 120 & lc_2018[] == 10 ~ 1,  
+  lc_2000[] == 130 & lc_2018[] == 10 ~ 1, 
+  lc_2000[] != lc_2018[] ~ 2,              
+  TRUE ~ 0                                 
 )
 
 # categorical raster for plotting
