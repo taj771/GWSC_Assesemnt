@@ -1,0 +1,27 @@
+\begin{table}[!h]
+\centering
+\caption{\label{tab:unnamed-chunk-7}Fixed Effects Logit Model of Conflict Probability}
+\centering
+\resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{
+\fontsize{10}{12}\selectfont
+\begin{threeparttable}
+\begin{tabular}[t]{>{\raggedright\arraybackslash}p{4cm}>{\raggedleft\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{1.5cm}>{\raggedleft\arraybackslash}p{0.8cm}}
+\toprule
+Variable & Coeff. & S.E. & Odds Ratio & \\
+\midrule
+Temperature Anomaly (t) & 0.063 & 0.034 & 1.065 & *\\
+Temperature Anomaly (t-1) & 0.008 & 0.039 & 1.008 & \\
+Temperature Anomaly (t-2) & 0.000 & 0.042 & 1.000 & \\
+Precipitation Anomaly (t) & -0.000 & 0.000 & 1.000 & \\
+Precipitation Anomaly (t-1) & -0.001 & 0.000 & 0.999 & **\\
+Precipitation Anomaly (t-2) & -0.001 & 0.000 & 0.999 & ***\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\item \textit{Note: } 
+\item Note: Coefficients represent log-odds. Odds ratios obtained by exponentiating coefficients.
+\item Fixed effects for pixel, year, and month included in all models.
+\item *** p < 0.01, ** p < 0.05, * p < 0.1
+\end{tablenotes}
+\end{threeparttable}}
+\end{table}
